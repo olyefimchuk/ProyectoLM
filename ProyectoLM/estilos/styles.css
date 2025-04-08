@@ -1,0 +1,8 @@
+header {
+    width: 100%; /* ocupa todo el ancho de la página */
+    position: fixed; /* si bajamos el la web menu nos acompañará  */
+    z-index: 100; /* https://keepcoding.io/blog/como-hacer-un-menu-de-navegacion-en-html/ */
+}
+nav {
+    float:left;
+}
