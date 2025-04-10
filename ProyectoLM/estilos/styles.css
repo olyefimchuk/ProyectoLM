@@ -1,11 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 header {
     width: 100%; /* ocupa todo el ancho de la página */
     position: fixed; /* si bajamos el la web menu nos acompañará  */
-    z-index: 100; /* https://keepcoding.io/blog/como-hacer-un-menu-de-navegacion-en-html/ */
+    z-index: 1000; /* https://keepcoding.io/blog/como-hacer-un-menu-de-navegacion-en-html/ */
+    text-align: center;
 }
 nav {
-    float:left;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+nav ul {
+    list-style: none;
+    overflow: hidden; 
+    padding: 0;
+    margin: 0;
 }
 nav ul li {
     float: left;
+    font-size: 16px;
+    margin-right: 50px; /* para separar menu */
+    
 }
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+
+
+
