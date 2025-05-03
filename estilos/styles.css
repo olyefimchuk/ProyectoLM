@@ -1,40 +1,130 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
-body{
-    height: 100vh;
-    background-image: url(/ProyectoLM/img/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-header {
-    /*width: 100%; /* ocupa todo el ancho de la página */
-    position: fixed; /* si bajamos el la web menu nos acompañará  */
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30%;
-    box-shadow: 0 5px 10px black;
-}
-header nav ul li {
-    float:left;
-}
-header nav ul li a {
-    padding: 15px;
-    color: black;
+    /*box-sizing: border-box;*/
     font-size: 20px;
-    display: block;
+    font-family:sans-serif;
+}
+
+header {
+    background-color: #5e4632;
+    color: white; /* color del texto blanco */
+    justify-items: center;
+    padding: 40px;
+    
+}
+
+header nav ul li {
+    float: left;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    
 }
 header nav ul li a:hover {
-    padding: 5px;
-    /*border: 1px solid black;*/
+    
+    border: 1px solid white;
+    border-radius: 10px;
+    /*color: orange;*/
 }
+
+main {
+    padding: 15px;
+    background-color: #fffaf0;
+    
+}
+
+footer{
+    background-color: #5e4632; 
+    color: white; /* color del texto blanco */
+    padding: 40px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-card {
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+  }
+  
+  .titulo {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  .precio {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .comprar {
+    background-color: #ffb6c1;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .comprar:hover{
+    background-color: #f37083;
+  }
+
+  .card-list {
+    display: flex;
+    flex-wrap: wrap; /* позволяет переносить карточки на следующую строку */
+    gap: 20px;
+    justify-content: space-between;
+    
+  }
+  
+    .product-card:hover .product-image{ 
+        transform: scale(1.3); 
+        transition: transform 0.3s;
+    }
+  
+  
+
+
+
+
+
+
+
+
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    header{
+        padding-bottom: 70px;
+    }
+    .card-list{
+      justify-content: center;
+    }
+  }
+  
+  
