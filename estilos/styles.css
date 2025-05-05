@@ -5,6 +5,7 @@
     font-size: 20px;
     font-family:sans-serif;
     scroll-behavior: smooth;
+    list-style: none; /* para quitar estilos(puntos) de las listas */
 }
 
 header {
@@ -17,7 +18,6 @@ header {
 
 header nav ul li {
     float: left;
-    list-style: none;
 }
 
 header nav ul li a {
@@ -46,12 +46,15 @@ main {
 }
 h2 {
     font-size: 30px;
+    text-align: center;
 }
 h3 {
+  text-align: center;
     font-size: 25px;
 }
 
 footer{
+    margin-top: 20px;
     background-color: #5e4632; 
     color: white; /* color del texto blanco */
     padding: 40px;
@@ -62,14 +65,7 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
+/*** tarjetas de los productos ***/
 .tarjeta {
     width: 25%;
     border: 1px solid black;
@@ -99,7 +95,7 @@ footer{
     padding: 10px 15px;
     margin: 10px;
     border-radius: 10px;
-    cursor: pointer; /* cambia a un "punto de mano" al pasar el cursor */
+    border: none;
   }
   .comprar:hover{
     background-color: #f37083; /* al pasar el ratón por encima del botón, cambia su color */
@@ -119,6 +115,77 @@ footer{
     }
   
   
+
+
+
+
+
+hr {
+    border: none;
+    height: 50px;
+    background-color: #5e4632;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.contactos {
+  text-align: center;
+  margin: 30px;
+}
+
+.contactos strong {
+  padding: 10px;
+}
+
+.contactos li {
+  padding: 10px;
+}
+
+
+
+
+
+
+/*** Formulario ***/
+form {
+  width: 90%; /* ancho del formulario 90% de la pantalla */
+  max-width: 800px; /* ancho maximo 800 pixeles */
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  width: 100%; /* 100% del ancho del formulario */
+  margin-bottom: 30px; 
+  padding: 15px;
+  border: 1px solid #ccc; /* border con color gris y tamaño de 1 pixel  */
+  border-radius: 10px;
+}
+
+form textarea {
+  min-height: 200px; /* altrura minima de textarea 200 pixeles */
+}
+
+form button {
+  width: 100%; /* 100% del ancho del formulario */
+  padding: 15px;
+  background-color: #ffb6c1;
+  color: white; /* color del texto es blanco */
+  border: none; /* sin border */
+  border-radius: 10px; 
+
+}
+
+form input:hover, textarea:hover {
+  border: 1px solid black; /* al pasar el boton por encima aparece un border negro con tamaño 1 pixel */
+}
+
+form button:hover {
+  background-color: #f37083;
+}
+
+
+
 
 
 
