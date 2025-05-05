@@ -114,7 +114,7 @@ footer{
   }
   
     .tarjeta:hover .tarjeta-imagen{ 
-        transform: scale(1.2); /* Aumenta el tamaño de la imagen al pasar el cursor por encima de la tarjeta */
+        transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el cursor por encima de la tarjeta */
         transition: transform 0.3s; /* cambia el tamaño suavemente en 0.3 segundos */
     }
   
