@@ -53,12 +53,24 @@ h3 {
     font-size: 25px;
 }
 
+
+.fondo-juguetes {
+  width: 100%;
+}
+
+.carrito {
+  
+  width: 5%;
+  position: fixed;
+}
+
+
+
 footer{
     margin-top: 20px;
     background-color: #5e4632; 
     color: white; /* color del texto blanco */
     padding: 40px;
-    
 }
 
 
