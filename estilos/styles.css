@@ -62,30 +62,39 @@ h3 {
 }
 
 
+/* Carrito */
 .carrito {
   position: fixed;
-  width: 50px;
-  height: 50px; /* Добавьте высоту */
-  bottom: 20px; /* Фиксируем снизу */
-  right: 20px;  /* Фиксируем справа */
+  width: 70px;
+  height: 70px;
+  bottom: 20px;
+  right: 20px;  
   display: flex;
+  background-color: #f37083;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
 }
-.carrtio-icon {
-  width: 70%;
+.carrito-icon {
+  width: 60px;
+  height: 60px;
   
 }
-.cantidad-carrito {
+#cantidad-carrito {
   position: absolute;
-  bottom: 20%;
+  bottom: 35%;
   left: 50%;
   color: white;
   font-size: 18px;
+  align-items: center;
+  justify-self: center;
 }
-.suma-carrito {
+#suma-carrito {
   position: absolute;
-  top: 0%;
-  left: 50%;
-  color: white;
+  top: -30%;
+  left: 40%;
+  color: black;
 }
 
 
@@ -131,14 +140,14 @@ footer{
     margin: 10px 0;
   }
   
-  .comprar {
+  .agregar {
     background-color: #ffb6c1; /* cambia color del fondo del boton */
     padding: 10px 15px;
     margin: 10px;
     border-radius: 10px;
     border: none;
   }
-  .comprar:hover{
+  .agregar:hover{
     background-color: #f37083; /* al pasar el ratón por encima del botón, cambia su color */
   }
 
@@ -234,8 +243,8 @@ form button:hover {
 
 
 
-
-  @media (max-width: 600px) { /* para dispositivos con tamaño de la pantalla menos de 600pixeles */
+/* para dispositivos con tamaño de la pantalla menos de 600pixeles */
+  @media (max-width: 600px) { 
     .tarjeta{
       width: 60vw; /* ancho de las tarjetas 60% del ancho de la pantalla */
     }
