@@ -25,11 +25,37 @@
 
     <main>
       <!-- Carrito -->
-      <div class="carrito">
+      <div class="carrito" class="carrito-icon" data-bs-toggle="modal" data-bs-target="#modalCarrito">
         <img src="img/carrito.png" alt="carrito" class="carrito-icon">
         <span id="cantidad-carrito">0</span>
-        <span id="suma-carrito">0€</span>
+        
       </div>
+
+      <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalCarritoLabel">Mi carrito</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Cantidad de productos:</strong> <span id="cantidad-carrito-modal">0</span></p>
+              <p><strong>Total:</strong> <span id="suma-carrito-modal">0€</span></p>
+              <ul id="lista-productos" class="list-group">
+                
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Comprar</button>
+              <button type="button" class="btn btn-danger" onclick="vaciarCarrito()">Vaciar carrito</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
 
         <!-- Seccion inicio -->
         <section id="inicio" class="inicio">
@@ -39,7 +65,7 @@ Cada pieza es un regalo único, lleno de calidez, seguro y ecológico.
 Ideal tanto para los más pequeños como para quienes desean un trocito de hogar en casa.</p>
 
             <h3 >¿Por qué elegirnos?</h3>
-            <ul style="list-style: none; padding: 0; text-align: center;">
+            <ul>
               <li>🧶 Hecho a mano</li>
               <li>🌱 Materiales naturales</li>
               <li>🎁 Perfecto para regalar</li>
@@ -51,67 +77,68 @@ Ideal tanto para los más pequeños como para quienes desean un trocito de hogar
 
         <p class="separador"></p> <!-- Separador de secciones -->
 
+        
         <section id="productos">
           <h2>Nuestros productos</h2>
         <div class="lista-tarjetas">
             <div class="tarjeta">
-                <img src="img/conejo.png" alt="conejo" class="tarjeta-imagen" />
-                <h3 class="titulo">Conejo chiquito</h3>
+                <img src="img/conejo.png" alt="conejo" class="tarjeta-imagen">
+                <h3 class="titulo">Conejo</h3>
                 <div class="precio">12€</div>
                 <button class="agregar" onclick="agregarAlCarrito(12)">Agregar al carrito</button>
               </div>
 
               <div class="tarjeta">
-                <img src="img/bufalo.png" alt="bufalo" class="tarjeta-imagen" />
+                <img src="img/bufalo.png" alt="bufalo" class="tarjeta-imagen">
                 <h3 class="titulo">Bufalo</h3>
                 <div class="precio">9€</div>
                 <button class="agregar" onclick="agregarAlCarrito(9)">Agregar al carrito</button>
               </div>
 
               <div class="tarjeta">
-                <img src="img/jirafa.png" alt="jirafa" class="tarjeta-imagen" />
+                <img src="img/jirafa.png" alt="jirafa" class="tarjeta-imagen">
                 <h3 class="titulo">Jirafa</h3>
                 <div class="precio">12€</div>
                 <button class="agregar" onclick="agregarAlCarrito(12)">Agregar al carrito</button>
               </div>
 
               <div class="tarjeta">
-                <img src="img/buho.png" alt="buho" class="tarjeta-imagen" />
+                <img src="img/buho.png" alt="buho" class="tarjeta-imagen">
                 <h3 class="titulo">Buho</h3>
                 <div class="precio">8€</div>
                 <button class="agregar" onclick="agregarAlCarrito(8)">Agregar al carrito</button>
               </div>
 
               <div class="tarjeta">
-                <img src="img/amongus.png" alt="juguete de among us" class="tarjeta-imagen" />
+                <img src="img/amongus.png" alt="juguete de among us" class="tarjeta-imagen">
                 <h3 class="titulo">Juguete de among us</h3>
                 <div class="precio">5€</div>
                 <button class="agregar" onclick="agregarAlCarrito(5)">Agregar al carrito</button>
               </div>
 
               <div class="tarjeta">
-                <img src="img/gato.png" alt="gato" class="tarjeta-imagen" />
+                <img src="img/gato.png" alt="gato" class="tarjeta-imagen">
                 <h3 class="titulo">Gato rojo</h3>
                 <div class="precio">11€</div>
                 <button class="agregar" onclick="agregarAlCarrito(11)">Agregar al carrito</button>
               </div>
 
               <div class="tarjeta">
-                <img src="img/haggy_waggy.png" alt="haggy_waggy" class="tarjeta-imagen" />
+                <img src="img/haggy_waggy.png" alt="haggy_waggy" class="tarjeta-imagen">
                 <h3 class="titulo">Haggy Waggy</h3>
                 <div class="precio">10€</div>
                 <button class="agregar" onclick="agregarAlCarrito(10)">Agregar al carrito</button>
               </div>
 
               <div class="tarjeta">
-                <img src="img/oso.png" alt="osito" class="tarjeta-imagen" />
+                <img src="img/oso.png" alt="osito" class="tarjeta-imagen">
                 <h3 class="titulo">Osito</h3>
                 <div class="precio">7€</div>
                 <button class="agregar" onclick="agregarAlCarrito(7)">Agregar al carrito</button>
               </div>
 
               <div class="tarjeta">
-                <img src="img/rana.png" alt="rana" class="tarjeta-imagen" />
+                <img src="img/rana.png" alt="rana" class="tarjeta-imagen">
                 <h3 class="titulo">Rana</h3>
                 <div class="precio">10€</div>
                 <button class="agregar" onclick="agregarAlCarrito(10)">Agregar al carrito</button>
@@ -131,14 +158,20 @@ Ideal tanto para los más pequeños como para quienes desean un trocito de hogar
           </ul>
 
           <form>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Mensaje"></textarea>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensaje" required></textarea>
             <button type="submit">Enviar</button>
           </form>
           
         </section>
           
+
+        
+
+
+
+
     </main>
 
 
