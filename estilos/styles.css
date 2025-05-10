@@ -1,13 +1,13 @@
 html, body {
-  height: 100%;
+  height: 100%; /* ocupan 100% de la pantalla */
 }
-*{
+*{ /* para todos elementos */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-size: 20px;
-    font-family:sans-serif;
-    scroll-behavior: smooth;
+    box-sizing: border-box; /* indica que el ancho y la altura del elemento incluyan el padding y el border */
+    font-size: 20px; /* tamaño de letras 20 pixeles */
+    font-family:sans-serif; /*  */
+    scroll-behavior: smooth; /* desplazamiento(scroll) de la pagina suave  */
     list-style: none; /* para quitar estilos(puntos) de las listas */
 }
 
@@ -39,6 +39,13 @@ main {
     padding: 15px;
     background-color: #fffaf0; 
 }
+
+footer{
+    background-color: #5e4632; 
+    color: white; /* color del texto blanco */
+    padding: 40px;
+}
+
 
 .inicio{
     padding: 15px;
@@ -101,21 +108,6 @@ h3, h3 + ul { /* para etiquetas "h3" y "ul" */
 
 
 
-
-
-
-
-footer{
-    margin-top: 20px;
-    background-color: #5e4632; 
-    color: white; /* color del texto blanco */
-    padding: 40px;
-}
-
-
-
-
-
 /*** tarjetas de los productos ***/
 .tarjeta {
     width: 25%;
@@ -138,62 +130,62 @@ footer{
   .precio {
     font-size: 20px; /* tamaño de letras 20 pixeles */
     font-weight: bold; /* hace que la fuente esté en negrita */
-    margin: 10px 0;
+    margin: 10px 0; /* margen de 10px arriba y abajo, y 0 a los lados */
   }
   
   .agregar {
     background-color: #ffb6c1; /* cambia color del fondo del boton */
-    padding: 10px 15px;
-    margin: 10px;
-    border-radius: 10px;
-    border: none;
+    padding: 10px 15px; /* relleno de 10px arriba y abajo, y 15px a los lados */
+    margin: 10px; /* margen de 10px */
+    border-radius: 10px; /* radio de border 10px */
+    border: none; /* sin border */
   }
-  .agregar:hover{
+.agregar:hover{
     background-color: #f37083; /* al pasar el ratón por encima del botón, cambia su color */
   }
 
-  .lista-tarjetas {
-    display: flex;
+
+
+.lista-tarjetas {
+    display: flex; /* convierte el contenedor en un contenedor flex */
     flex-wrap: wrap; /* para mover la tarjeta a la siguente línea */
-    gap: 20px;
-    justify-content: center;
+    gap: 20px; /* espacio de 20px entre las tarjetas */
+    justify-content: center; /* para centrar las tarjetas */
     
   }
   
-    .tarjeta:hover .tarjeta-imagen{ 
-        transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el cursor por encima de la tarjeta */
-        transition: transform 0.3s; /* cambia el tamaño suavemente en 0.3 segundos */
-    }
+.tarjeta:hover .tarjeta-imagen{ 
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el cursor por encima de la tarjeta */
+    transition: transform 0.3s; /* cambia el tamaño suavemente en 0.3 segundos */
+}
+ 
   
-  
 
 
 
 
-/* Separador de secciones */
+/*** Separador de secciones ***/
 .separador {
     border: none; /* sin border */
     height: 50px; /* altura de 50 pixeles */
-    background-color: #5e4632;
-    margin: 30px 0;
+    background-color: #5e4632; /* el color de fondo es marrón */
+    margin: 30px 0; /* margen de 30px arriba y abajo, y 0 a los lados */
     width: 100%; /* ancho 100% de la pantalla */
 }
 
-.contactos {
-  text-align: center;
-  margin: 30px;
-}
 
-.contactos strong {
-  padding: 10px;
+
+
+
+/*** Información de contacto  ***/
+.contactos {
+  text-align: center; /* centramos texto */
+  margin: 30px; /* margen de 30px */
 }
 
 .contactos li {
-  padding: 10px;
+  padding: 10px; /* relleno de 10px */
 }
-
-
-
 
 
 
@@ -201,16 +193,16 @@ footer{
 form {
   width: 90%; /* ancho del formulario 90% de la pantalla */
   max-width: 800px; /* ancho maximo 800 pixeles */
-  margin: 0 auto;
+  margin: 0 auto; /* sirve para centrar el formulario horizontalmente */
 }
 
 form input,
 form textarea {
   width: 100%; /* 100% del ancho del formulario */
-  margin-bottom: 30px; 
-  padding: 15px;
+  margin-bottom: 30px; /* margen inferior de 30px */
+  padding: 15px; /* relleno de 15px */
   border: 1px solid #ccc; /* border con color gris y tamaño de 1 pixel  */
-  border-radius: 10px;
+  border-radius: 10px; /* radio del border 10px */
 }
 
 form textarea {
@@ -219,11 +211,11 @@ form textarea {
 
 form button {
   width: 100%; /* 100% del ancho del formulario */
-  padding: 15px;
+  padding: 15px; /* relleno de 15px */
   background-color: #ffb6c1;
   color: white; /* color del texto es blanco */
   border: none; /* sin border */
-  border-radius: 10px; 
+  border-radius: 10px; /* radio del border 10px */
 
 }
 
@@ -232,7 +224,7 @@ form input:hover, textarea:hover {
 }
 
 form button:hover {
-  background-color: #f37083;
+  background-color: #f37083; /* al pasar el ratón por encima del botón, cambia su color */
 }
 
 
@@ -265,9 +257,9 @@ form button:hover {
     .precio{
       font-size: 15px;
     }
-    #cantidad-carrito {
-      bottom: 21%;
-      left: 36%;
+    #cantidad-carrito { /* sirve para centrar contador del productos */
+      bottom: 17px;
+      left: 30px;
       font-size: 16px;
       color: white;
       font-size: 18px;

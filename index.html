@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
+    <!-- Están conectados un archivo de estilos CSS, un script JS y Bootstrap a través de enlaces -->
     <link rel="stylesheet" href="estilos/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous" defer></script>
@@ -12,6 +13,7 @@
 </head>
 
 <body>
+    <!-- Menu de navegación -->
     <header>
         <nav>
             <ul>
@@ -30,25 +32,23 @@
         <span id="cantidad-carrito">0</span>
         
       </div>
-
+      <!-- Una ventana modal que aparece al hacer clic en el carrito -->
       <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+        <!-- Estructura de ventana modal del Bootstrap -->
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="modalCarritoLabel">Mi carrito</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              <h5 class="modal-title" id="modalCarritoLabel">Mi carrito</h5> <!-- Titulo de ventana modal -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button> <!-- Cruz para cerrar la ventana modal -->
             </div>
             <div class="modal-body">
-              <p><strong>Cantidad de productos:</strong> <span id="cantidad-carrito-modal">0</span></p>
-              <p><strong>Total:</strong> <span id="suma-carrito-modal">0€</span></p>
-              <ul id="lista-productos" class="list-group">
-                
-              </ul>
+              <p><strong>Cantidad de productos:</strong> <span id="cantidad-carrito-modal">0</span></p> <!-- Cantidad de los productos añadidos al carrito -->
+              <p><strong>Total:</strong> <span id="suma-carrito-modal">0€</span></p> <!-- Suma total de los productos añadidos al carrito -->
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Comprar</button>
-              <button type="button" class="btn btn-danger" onclick="vaciarCarrito()">Vaciar carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Comprar</button> <!-- Boton para comprar -->
+              <button type="button" class="btn btn-danger" onclick="vaciarCarrito()">Vaciar carrito</button> <!-- Boton para vaciar carrito -->
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button> <!-- Boton para cerrar ventana modal del carrito -->
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ Cada pieza es un regalo único, lleno de calidez, seguro y ecológico.
 Ideal tanto para los más pequeños como para quienes desean un trocito de hogar en casa.</p>
 
             <h3 >¿Por qué elegirnos?</h3>
-            <ul>
+            <ul> <!-- Lista no ordenada -->
               <li>🧶 Hecho a mano</li>
               <li>🌱 Materiales naturales</li>
               <li>🎁 Perfecto para regalar</li>
@@ -74,18 +74,18 @@ Ideal tanto para los más pequeños como para quienes desean un trocito de hogar
         </section>
           
 
-
         <p class="separador"></p> <!-- Separador de secciones -->
 
-        
+
+        <!-- Seccion de los productos -->
         <section id="productos">
           <h2>Nuestros productos</h2>
-        <div class="lista-tarjetas">
+        <div class="lista-tarjetas"> <!-- Lista de los productos -->
             <div class="tarjeta">
-                <img src="img/conejo.png" alt="conejo" class="tarjeta-imagen">
-                <h3 class="titulo">Conejo</h3>
-                <div class="precio">12€</div>
-                <button class="agregar" onclick="agregarAlCarrito(12)">Agregar al carrito</button>
+                <img src="img/conejo.png" alt="conejo" class="tarjeta-imagen"> <!-- Imagen del producto -->
+                <h3 class="titulo">Conejo</h3> <!-- Titulo de la tarjeta -->
+                <div class="precio">12€</div> <!-- Precio del producto -->
+                <button class="agregar" onclick="agregarAlCarrito(12)">Agregar al carrito</button> <!-- Boton para agregar al carrito -->
               </div>
 
               <div class="tarjeta">
@@ -146,38 +146,34 @@ Ideal tanto para los más pequeños como para quienes desean un trocito de hogar
         </div>
         </section>
 
-        <div class="separador"></div>
+
+        <div class="separador"></div> <!-- Separador de secciones -->
         
 
         <section id="contacto">
           <h2>Contacto</h2>
 
+          <!-- Información de contacto -->
           <ul class="contactos">
             <li><img src="img/icon-email.png" alt="icon-email"><strong>Nuestro email: email@gmail.com</strong></li>
             <li><img src="img/icon-telefono.png" alt="icon-telefono"><strong>Nuestro telefono: +34 999 999 999</strong></li>
           </ul>
 
+          <!-- Formulario -->
           <form>
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+            <input type="text" placeholder="Nombre" required> <!-- para introducir nombre -->
+            <input type="email" placeholder="Email" required> <!-- para introducir correo -->
+            <textarea placeholder="Mensaje" required></textarea> <!-- para introducir mensaje -->
+            <button type="submit">Enviar</button> <!-- Boton para enviar formulario -->
           </form>
           
         </section>
-          
-
-        
-
-
-
-
     </main>
 
 
 
     <footer>
-        
+        <!-- Pie de la página -->
     </footer>
 
 
